@@ -1,0 +1,12 @@
+.corrio-icon{position:relative;display:inline-block;flex-shrink:0;vertical-align:middle;overflow:visible;pointer-events:none}
+.corrio-icon-partner{width:20px;height:20px;flex-basis:20px}
+.corrio-icon-api{width:24px;height:24px;flex-basis:24px}
+.corrio-icon-success{width:64px;height:64px}
+.corrio-icon-viewport{position:absolute;inset:0;display:block;visibility:hidden}
+.corrio-icon-api .corrio-icon-viewport{left:-4px;right:auto;width:32px;height:24px}
+.corrio-icon-fallback{position:absolute;inset:0;display:grid;place-items:center;visibility:hidden}
+.corrio-icon-fallback img{display:block;margin:0;max-width:none}
+.corrio-icon-success .corrio-icon-fallback{background:#257e80;border-radius:50%}
+.corrio-icon[data-state=ready] .corrio-icon-viewport{visibility:visible}
+.corrio-icon[data-state=fallback] .corrio-icon-fallback{visibility:visible}
+.confirmation-mark:has(.corrio-icon-success){background:transparent}
